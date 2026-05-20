@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Environment
+.env
+.env.local
+
+# Vector store (rebuilt from the committed corpus parquet on startup)
+data/chroma/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Model caches
+.cache/
+*.bin
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
