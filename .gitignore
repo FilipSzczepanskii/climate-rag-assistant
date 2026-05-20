@@ -19,6 +19,7 @@ data/chroma/
 # MLflow
 mlruns/
 mlartifacts/
+mlflow.db
 
 # Model caches
 .cache/

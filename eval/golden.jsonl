@@ -1,0 +1,16 @@
+{"question": "What are the main health effects of fine particulate matter?", "expected_sources": ["Particulate matter", "Air pollution"], "keywords": ["respiratory", "lung"]}
+{"question": "What temperature limit does the Paris Agreement set for global warming?", "expected_sources": ["Paris Agreement"], "keywords": ["1.5", "2"]}
+{"question": "What causes acid rain?", "expected_sources": ["Acid rain"], "keywords": ["sulfur", "nitrogen"]}
+{"question": "How does the greenhouse effect work?", "expected_sources": ["Greenhouse gas", "Climate change"], "keywords": ["infrared", "heat"]}
+{"question": "What is the air quality index used for?", "expected_sources": ["Air quality index"], "keywords": ["pollution", "health"]}
+{"question": "What are the largest sources of carbon dioxide emissions?", "expected_sources": ["Fossil fuel", "Carbon dioxide in the atmosphere of Earth"], "keywords": ["fossil", "combustion"]}
+{"question": "How does the ozone layer protect life on Earth?", "expected_sources": ["Ozone depletion", "Ozone"], "keywords": ["ultraviolet"]}
+{"question": "Why is ground-level ozone harmful to health?", "expected_sources": ["Ground-level ozone"], "keywords": ["respiratory", "smog"]}
+{"question": "What are the main types of renewable energy?", "expected_sources": ["Renewable energy"], "keywords": ["solar", "wind"]}
+{"question": "How does deforestation affect the climate?", "expected_sources": ["Deforestation"], "keywords": ["carbon", "forest"]}
+{"question": "What causes ocean acidification?", "expected_sources": ["Ocean acidification"], "keywords": ["carbon dioxide", "ph"]}
+{"question": "Why is global sea level rising?", "expected_sources": ["Sea level rise"], "keywords": ["ice", "melting"]}
+{"question": "Why is methane considered a powerful greenhouse gas?", "expected_sources": ["Methane", "Global warming potential"], "keywords": ["greenhouse", "warming"]}
+{"question": "What is a carbon footprint?", "expected_sources": ["Carbon footprint"], "keywords": ["emissions", "greenhouse"]}
+{"question": "How do emission standards reduce air pollution from vehicles?", "expected_sources": ["Emission standard"], "keywords": ["vehicle", "pollutant"]}
+{"question": "What are the health effects of carbon monoxide exposure?", "expected_sources": ["Carbon monoxide"], "keywords": ["blood", "poisoning"]}
