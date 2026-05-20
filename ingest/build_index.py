@@ -55,7 +55,7 @@ def build() -> None:
             "text": c.text,
             "embedding": vector,
         }
-        for c, vector in zip(chunks, vectors)
+        for c, vector in zip(chunks, vectors, strict=True)
     ]
     frame = pd.DataFrame(rows)
     settings.corpus_path.parent.mkdir(parents=True, exist_ok=True)

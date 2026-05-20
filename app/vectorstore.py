@@ -65,7 +65,11 @@ class VectorStore:
                     "chunk_index": int(idx),
                 }
                 for title, url, doc_id, idx in zip(
-                    df["title"], df["source_url"], df["doc_id"], df["chunk_index"]
+                    df["title"],
+                    df["source_url"],
+                    df["doc_id"],
+                    df["chunk_index"],
+                    strict=True,
                 )
             ],
         )
@@ -80,7 +84,7 @@ class VectorStore:
         documents = result["documents"][0]
         metadatas = result["metadatas"][0]
         distances = result["distances"][0]
-        for doc, meta, dist in zip(documents, metadatas, distances):
+        for doc, meta, dist in zip(documents, metadatas, distances, strict=True):
             hits.append(
                 Hit(
                     text=doc,

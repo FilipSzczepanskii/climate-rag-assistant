@@ -54,7 +54,9 @@ class Retriever:
     def _rerank(self, query: str, hits: list[Hit]) -> list[Hit]:
         encoder = _load_cross_encoder(self.reranker_model)
         scores = encoder.predict([(query, hit.text) for hit in hits])
-        ranked = sorted(zip(hits, scores), key=lambda pair: pair[1], reverse=True)
+        ranked = sorted(
+            zip(hits, scores, strict=True), key=lambda pair: pair[1], reverse=True
+        )
         return [
             Hit(
                 text=hit.text,

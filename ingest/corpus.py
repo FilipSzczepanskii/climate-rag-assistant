@@ -12,7 +12,12 @@ import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 WIKI_API = "https://en.wikipedia.org/w/api.php"
-USER_AGENT = "rag-assistant/0.1 (portfolio project)"
+# Wikipedia enforces a User-Agent policy: a descriptive agent with a contact
+# URL is required, otherwise the API answers 403.
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; rag-assistant/0.1; "
+    "+https://github.com/FilipSzczepanskii)"
+)
 TIMEOUT = httpx.Timeout(30.0, connect=10.0)
 
 # Curated knowledge base: climate, air quality and environmental science.
@@ -45,8 +50,9 @@ ARTICLE_TITLES: list[str] = [
     "Ocean acidification",
     "Sea level rise",
     "Effects of climate change",
+    "Climate change mitigation",
     "Global warming potential",
-    "Air pollution in Poland",
+    "Methane",
 ]
 
 
