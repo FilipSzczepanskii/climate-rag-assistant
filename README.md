@@ -97,18 +97,20 @@ python -m app.api
 
 ## Status
 
-In progress. Built so far:
+Working:
 
-- Ingestion pipeline: Wikipedia fetch, chunking, embedding, Chroma index
-- Environment-driven configuration
+- Ingestion: Wikipedia fetch, chunking, embedding, Chroma index (31 articles, 2132 chunks)
+- RAG core: retrieval with optional reranking, provider-agnostic LLM client, cited answers
+- FastAPI service with a mounted Gradio chat UI
+- Evaluation harness: golden Q&A set scored on retrieval and answer metrics, tracked with MLflow
+- GitHub Actions CI: lint, tests, retrieval evaluation gate
+- Docker image for the Space
 
-Next:
+Retrieval evaluation on the golden set: hit rate 0.94, MRR 0.79.
 
-- RAG core: retriever, provider-agnostic LLM client, answer assembly
-- FastAPI service and Gradio chat UI
-- Evaluation harness with MLflow experiment tracking
-- Docker image and GitHub Actions CI
-- Deploy to Hugging Face Spaces
+To do:
+
+- Deploy the Space to Hugging Face
 
 ## License
 
