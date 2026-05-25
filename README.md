@@ -1,3 +1,14 @@
+---
+title: Climate Q&A
+emoji: 🌍
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+---
+
 # Climate Q&A: a Retrieval-Augmented Assistant
 
 A question-answering service that answers climate and air quality questions
